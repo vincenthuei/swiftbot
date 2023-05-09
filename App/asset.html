@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://www.cssscript.com/demo/sticky.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/antd@4.12.0/dist/antd.min.css" />
+
+
+    <title>Asset</title>
+  </head>
+  <body class="bg-white-100 h-screen">
+    <div class="flex justify-center">
+    <div class=" min-h-screen relative gray-bg-color" style="min-width: 300px; width: 100%; max-width: 667px;">
+        <div class="bg-inside" style="min-height: 100vh; height: 100%;">
+            <div class="w-full relative pt-3">
+                <div class="mx-4 mb-4 flex justify-between">
+                    <span class="flex items-center arrowbox-bg-color p-2 rounded-full  cursor-pointer">
+                        <img src="./images/back.svg">
+                    </span>
+                    <div class="justify-end flex items-center font-600">Asset</div>
+                    <span class="flex items-center arrowbox-bg-color p-2 rounded-full  cursor-pointer">
+                        <img src="./images/close.svg">
+                    </span>
+                </div>
+            </div>
+
+
+
+
+            <div class="mx-6">
+                <div class="">
+                    
+
+                    <div class="pb-5 mb-2">
+                        <div class="border-b shadow-md p-4  bg-main-color-gradient text-white" style="border-radius: 9px;">
+                            <div class="flex justify-start mb-1 font-bold text-sm">Total</div>
+                            <div class="flex justify-start">
+                                <span class="mr-2">
+                                    <div class="text-2xl font-bold">
+                                        <div style="display: block;">0.000000 USDT</div>
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="grid grid-cols-4 gap-2 mt-4">
+                                <div class="col-span-2 ">
+                                    <a href="/inter_transfer">
+                                        <div class="rounded-xl bg-green box-shadow-center flex justify-center items-center mx-1 py-4 w-fit"
+                                            style="height: 86px;">
+                                            <div class="text-center text-base text-white my-auto sm:p-2"
+                                                style="font-family: Montserrat; font-style: normal; font-weight: 600; font-size: 14px; line-height: 17px;">
+                                                Internal Transfer</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-span-2 ">
+                                    <a href="/Package">
+                                        <div class="rounded-xl bg-green box-shadow-center flex justify-center items-center mx-1 py-4 w-fit"
+                                            style="height: 86px;">
+                                            <div class="text-center text-base text-white my-auto sm:p-2"
+                                                style="font-family: Montserrat; font-style: normal; font-weight: 600; font-size: 14px; line-height: 17px;">
+                                                Package</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ant-tabs ant-tabs-top ant-tabs-mobile ant-tabs-centered" style="color: black;">
+                            <div role="tablist" class="ant-tabs-nav">
+                                <div class="ant-tabs-nav-wrap">
+                                    <div class="ant-tabs-nav-list" style="transform: translate(0px, 0px);">
+                                        <div class="ant-tabs-tab ant-tabs-tab-active">
+                                            <div role="tab" aria-selected="true" class="ant-tabs-tab-btn" tabindex="0"
+                                                id="rc-tabs-0-tab-all" aria-controls="rc-tabs-0-panel-all">
+                                                <div class="text-center">All</div>
+                                            </div>
+                                        </div>
+                                        <div class="ant-tabs-ink-bar ant-tabs-ink-bar-animated" style="left: 0px; width: 18px;"></div>
+                                    </div>
+                                </div>
+                                <div class="ant-tabs-nav-operations ant-tabs-nav-operations-hidden"></div>
+                            </div>
+                            <div class="ant-tabs-content-holder">
+                                <div class="ant-tabs-content ant-tabs-content-top">
+                                    <div role="tabpanel" tabindex="0" aria-hidden="false" class="ant-tabs-tabpane ant-tabs-tabpane-active"
+                                        id="rc-tabs-0-panel-all" aria-labelledby="rc-tabs-0-tab-all">
+                                        <div class="items-center justify-center mt-10 "><img
+                                                src="data:image/png;base64,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"
+                                                class=" object-contain h-full w-full" style="height: 15vh;"><br>
+                                            <div class="flex justify-center items-center">
+                                                <div class="flex justify-center items-center font-black text-lg text-center mb-2 text-gray-400"
+                                                    style="width: 310px;">No records found</div>
+                                            </div>
+                                        </div>
+                                        <div class="flex justify-end items-center my-5"><span class="inline-block ">
+                                                <ul class="ant-pagination ant-pagination-simple mini">
+                                                    <li title="Previous Page" class="ant-pagination-prev ant-pagination-disabled"
+                                                        aria-disabled="true"><button class="ant-pagination-item-link" type="button"
+                                                            tabindex="-1" disabled=""><span role="img" aria-label="left"
+                                                                class="anticon anticon-left"><svg viewBox="64 64 896 896" focusable="false"
+                                                                    data-icon="left" width="1em" height="1em" fill="currentColor"
+                                                                    aria-hidden="true">
+                                                                    <path
+                                                                        d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 000 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z">
+                                                                    </path>
+                                                                </svg></span></button></li>
+                                                    <li title="1/0" class="ant-pagination-simple-pager"><input type="text" size="3"
+                                                            value="1"><span class="ant-pagination-slash">/</span>0</li>
+                                                    <li title="Next Page" class="ant-pagination-next ant-pagination-disabled"
+                                                        aria-disabled="true"><button class="ant-pagination-item-link" type="button"
+                                                            tabindex="-1" disabled=""><span role="img" aria-label="right"
+                                                                class="anticon anticon-right"><svg viewBox="64 64 896 896" focusable="false"
+                                                                    data-icon="right" width="1em" height="1em" fill="currentColor"
+                                                                    aria-hidden="true">
+                                                                    <path
+                                                                        d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z">
+                                                                    </path>
+                                                                </svg></span></button></li>
+                                                </ul>
+                                            </span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+              
+                </div>
+
+
+           
+            </div>
+
+
+           
+            
+
+            
+        </div>
+
+
+        <!-- Sticky Animated Tab Bar -->
+        <div class="z-20 sticky bottom-0 right-0 left-0 p-0 bg-white">
+            <nav class="navbar-container">
+                <ul class="list grid grid-cols-10 justify-center">
+                <div style="--position: 2;" data-indicator class="indicator">
+                    <div class="corners"></div>
+                </div>
+                <li class="col-span-2 flex justify-center"><a href="#">
+                    <div class="icon">
+                        <img src="./images/home.svg">
+                    </div>
+                    <div class="text">Home</div>
+                </a></li>
+                <li class="col-span-2 flex justify-center"><a href="#">
+                    <div class="icon">
+                        <img src="./images/dashboard.svg">
+                    </div>
+                    <div class="text">Dashboard</div>
+                </a></li>
+                <li class="col-span-2 flex justify-center"><a href="#" class="active">
+                    <div class="icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.4211 13.4167C16.9684 13.4167 17.4211 13.2356 17.7789 12.8736C18.1368 12.5116 18.3158 12.0537 18.3158 11.5C18.3158 10.9463 18.1368 10.4884 17.7789 10.1264C17.4211 9.76435 16.9684 9.58333 16.4211 9.58333C15.8737 9.58333 15.4211 9.76435 15.0632 10.1264C14.7053 10.4884 14.5263 10.9463 14.5263 11.5C14.5263 12.0537 14.7053 12.5116 15.0632 12.8736C15.4211 13.2356 15.8737 13.4167 16.4211 13.4167ZM2.52632 23C1.83158 23 1.23663 22.75 0.741474 22.2499C0.247158 21.7491 0 21.1472 0 20.4444V2.55556C0 1.85278 0.247158 1.25094 0.741474 0.750055C1.23663 0.250018 1.83158 0 2.52632 0H20.2105C20.9053 0 21.5002 0.250018 21.9954 0.750055C22.4897 1.25094 22.7368 1.85278 22.7368 2.55556V5.75H20.2105V2.55556H2.52632V20.4444H20.2105V17.25H22.7368V20.4444C22.7368 21.1472 22.4897 21.7491 21.9954 22.2499C21.5002 22.75 20.9053 23 20.2105 23H2.52632ZM12.6316 17.8889C11.9368 17.8889 11.3423 17.6389 10.848 17.1388C10.3528 16.6379 10.1053 16.0361 10.1053 15.3333V7.66667C10.1053 6.96389 10.3528 6.36206 10.848 5.86117C11.3423 5.36113 11.9368 5.11111 12.6316 5.11111H21.4737C22.1684 5.11111 22.7634 5.36113 23.2585 5.86117C23.7528 6.36206 24 6.96389 24 7.66667V15.3333C24 16.0361 23.7528 16.6379 23.2585 17.1388C22.7634 17.6389 22.1684 17.8889 21.4737 17.8889H12.6316Z" fill="white"/>
+                    </svg>                                
+                    </div>
+                    <!-- <div class="text">Messages</div> -->
+                </a></li>
+                <li class="col-span-2 flex justify-center"><a href="#">
+                    <div class="icon">
+                        <img src="./images/list.svg">
+                    </div>
+                    <div class="text">Trade</div>
+                </a></li>
+                <li class="col-span-2 flex justify-center"><a href="#">
+                    <div class="icon">
+                        <img src="./images/profile.svg">
+                    </div>
+                    <div class="text">Profile</div>
+                </a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    </div>
+    <script src="js/script.js"></script>  
+  </body>
+</html>

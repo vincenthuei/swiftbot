@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://www.cssscript.com/demo/sticky.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/antd@4.12.0/dist/antd.min.css" />
+
+
+    <title>Performance Demo</title>
+  </head>
+  <body class="bg-white-100 h-screen">
+    <div class="flex justify-center">
+    <div class=" min-h-screen relative gray-bg-color" style="min-width: 300px; width: 100%; max-width: 667px;">
+        <div class="bg-inside-demo" style="min-height: 115vh; height: 100%;">
+            <div class="w-full relative pt-3">
+                <div class="mx-4 mb-4 flex justify-between">
+                    <span class="flex items-center arrowbox-bg-color p-2 rounded-full  cursor-pointer">
+                        <img src="./images/back.svg">
+                    </span>
+                    <div class="justify-end flex flex-col items-center font-600">Perfomance <span style="color:#014A5B;">DEMO</span></div>
+                    <span class="flex items-center arrowbox-bg-color p-2 rounded-full  cursor-pointer">
+                        <img src="./images/close.svg">
+                    </span>
+                </div>
+            </div>
+
+
+
+
+            <div class="mx-6">
+                <div class="flex justify-center items-center mx-4  px-2 ">
+                    <span class="py-2 px-4 text-center drop-shadow"
+                        style="background: rgb(255, 255, 255); border-radius: 16px; color: #013648; width: 155px; font-family: Montserrat; font-style: normal; font-weight: 500; font-size: 14px; line-height: 20px;">Choose
+                        Date <span role="img" aria-label="down" class="anticon anticon-down"><svg viewBox="64 64 896 896"
+                                focusable="false" data-icon="down" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z">
+                                </path>
+                            </svg></span></span>
+                </div>
+
+                <div class="grid grid-cols-4 mt-7">
+                    <div class="col-span-3 border-left">
+                        <div class="text-xs font-semibold mb-1">Total Profit</div>
+                        <div class="text-2xl font-semibold text-blue">$100,555.00</div>
+                    </div>
+                    <div class="col-span-1 border-left">
+                        <div class="text-xs font-semibold mb-1">ROI</div>
+                        <div class="text-base font-semibold text-green">+ 34%</div>
+                    </div>
+
+                    <div class="col-span-3 border-left my-4">
+                        <div class="text-xs font-semibold mb-1">Total initial capital amount</div>
+                        <div class="text-lg text-gray">$2,330,245.00</div>
+                    </div>
+                    <div class="col-span-1 border-left my-4">
+                        <div class="text-xs font-semibold mb-1">Active Days</div>
+                        <div class="text-base font-semibold text-blue">24</div>
+                    </div>
+                </div>
+            </div>
+
+            <img src="./images/graph-demo.svg" class="w-full">
+
+            <div class="">
+                <div class="flex justify-between px-5 mt-3">
+                    <div class="text-sm font-bold">Open Position List</div>
+                    <div><span role="img" aria-label="file-protect" style="font-size:23px" tabindex="-1"
+                            class="anticon anticon-file-protect black  mx-2">
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.0028 8.45936C12.2474 8.45936 10.0057 10.7011 10.0057 13.4565C10.0057 16.212 12.2474 18.4537 15.0028 18.4537C17.7583 18.4537 20 16.212 20 13.4565C20 10.7011 17.7583 8.45936 15.0028 8.45936V8.45936ZM15.0028 17.182C12.9486 17.182 11.2773 15.5108 11.2773 13.4565C11.2773 11.4023 12.9486 9.73101 15.0028 9.73101C17.0571 9.73101 18.7284 11.4023 18.7284 13.4565C18.7284 15.5108 17.0571 17.182 15.0028 17.182ZM15.6387 11.3048V13.4565C15.6387 13.6326 15.5656 13.8009 15.4369 13.9211L14.1804 15.0952C14.0578 15.2097 13.9019 15.2664 13.7464 15.2664C13.5764 15.2664 13.4069 15.1987 13.2817 15.0647C13.042 14.8081 13.0556 14.4057 13.3122 14.166L14.367 13.1805V11.3048C14.367 10.9536 14.6517 10.669 15.0028 10.669C15.354 10.669 15.6387 10.9536 15.6387 11.3048V11.3048ZM15.0028 19.0747H5.13199V15.8753C5.13199 15.5242 4.8473 15.2395 4.49617 15.2395H1.27164V1.27164H14.367V7.24495C14.367 7.59608 14.6517 7.88077 15.0028 7.88077C15.354 7.88077 15.6387 7.59608 15.6387 7.24495V0.635821C15.6387 0.284689 15.354 0 15.0028 0H0.635821C0.284689 0 0 0.284689 0 0.635821V15.8752C0 16.0446 0.067556 16.2069 0.187687 16.3263L4.04804 20.1616C4.16717 20.28 4.32823 20.3464 4.49617 20.3464H15.0029C15.354 20.3464 15.6387 20.0617 15.6387 19.7105C15.6387 19.3594 15.354 19.0747 15.0028 19.0747V19.0747ZM3.86035 18.1825L2.17813 16.5112H3.86035V18.1825ZM9.2055 12.7084C9.2055 13.0595 8.92081 13.3442 8.56968 13.3442H3.48172C3.13059 13.3442 2.8459 13.0595 2.8459 12.7084C2.8459 12.3572 3.13059 12.0725 3.48172 12.0725H8.56968C8.92081 12.0725 9.2055 12.3572 9.2055 12.7084ZM9.2055 9.85674C9.2055 10.2079 8.92081 10.4926 8.56968 10.4926H3.48172C3.13059 10.4926 2.8459 10.2079 2.8459 9.85674C2.8459 9.50561 3.13059 9.22092 3.48172 9.22092H8.56968C8.92081 9.22092 9.2055 9.50561 9.2055 9.85674ZM9.2055 15.5597C9.2055 15.9109 8.92081 16.1956 8.56968 16.1956H6.32523C5.9741 16.1956 5.68941 15.9109 5.68941 15.5597C5.68941 15.2086 5.9741 14.9239 6.32523 14.9239H8.56968C8.92081 14.9239 9.2055 15.2086 9.2055 15.5597ZM12.1571 7.64122H3.48172C3.13059 7.64122 2.8459 7.35653 2.8459 7.0054C2.8459 6.65427 3.13059 6.36958 3.48172 6.36958H12.1571C12.5083 6.36958 12.793 6.65427 12.793 7.0054C12.793 7.35653 12.5083 7.64122 12.1571 7.64122ZM12.793 4.15378C12.793 4.50491 12.5083 4.7896 12.1571 4.7896H3.48172C3.13059 4.7896 2.8459 4.50491 2.8459 4.15378C2.8459 3.80265 3.13059 3.51796 3.48172 3.51796H12.1571C12.5083 3.51796 12.793 3.80265 12.793 4.15378Z" fill="#013648"/>
+                                </svg>                                                              
+                        </span>
+                    </div>
+                </div>
+
+                <div class="px-2 mx-3 mt-2">
+                    <div class="wallet-demo rounded-3xl px-4 pb-4 pt-4 text-white">
+                        <div class="mb-2">
+                            <div class="grid grid-cols-4">
+                                <div class="col-span-2 flex items-center flex-col">
+                                    <span class="inline-block text-2xl font-semibold">750.000000</span>
+                                    <span class="inline-block "> Wallet Limit</span>
+                                </div>
+                                <div class="col-span-2 flex items-center flex-col">
+                                    <span class="inline-block text-2xl font-semibold">362.91</span>
+                                    <span class="inline-block"> Total Position</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border border-b-gray-600"></div>
+                        <div class="grid grid-cols-4 gap-1 mt-4 mx-3 font-semibold">
+                            <div class="col-span-2 flex justify-start"><span class="inline-block w-1/2 "> Robot</span><span
+                                    class="inline-block mx-2">:</span><span class="inline-block w-1/2 ">16</span></div>
+                            <div class="col-span-2 flex justify-start"><span class="inline-block w-1/2 "> Cover</span><span
+                                    class="inline-block mx-2">:</span><span class="inline-block w-1/2 ">3305</span></div>
+                            <div class="col-span-2 flex justify-start"><span class="inline-block w-1/2 "> Bal</span><span
+                                    class="inline-block mx-2">:</span><span class="inline-block w-1/2 ">272</span></div>
+                            <div class="col-span-2 flex justify-start"><span class="inline-block w-1/2 "> PNL</span><span
+                                    class="inline-block mx-2">:</span><span class="inline-block w-1/2 ">2,425.31</span></div>
+                        </div>
+
+                    </div>
+
+                    <div class="mt-1 flex justify-between py-2">
+                        <div class="ant-row ant-form-item" style="margin: 0px; row-gap: 0px;">
+                            <div class="ant-col ant-form-item-control">
+                                <div class="ant-form-item-control-input">
+                                    <div class="ant-form-item-control-input-content">
+                                        <input placeholder="Search" class="ant-input input-border" type="text" id="apiKey" value="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                     
+                        <div class="text-white w-1/3">
+                            <button class="btn-coin flex justify-center items-center text-sm">
+                                All Positions
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div>
+
+
+                        <div class="ant-table-wrapper rounded-2xl mt-1 no-row-hover">
+                            <div class="ant-spin-nested-loading">
+                                <div class="ant-spin-container">
+                                    <div
+                                        class="ant-table ant-table-small ant-table-ping-right ant-table-fixed-column ant-table-scroll-horizontal ant-table-has-fix-left">
+                                        <div class="ant-table-container">
+                                            <div class="ant-table-content" style="overflow: auto hidden;">
+                                                <table style="width: 500px; min-width: 100%; table-layout: fixed;">
+                                                    <colgroup>
+                                                        <col style="width: 180px;">
+                                                        <col style="width: 80px;">
+                                                        <col style="width: 75px;">
+                                                        <col style="width: 75px;">
+                                                        <col style="width: 85px;">
+                                                        <col style="width: 100px;">
+                                                    </colgroup>
+                                                    <thead class="ant-table-thead">
+                                                        <tr>
+                                                            <th class="ant-table-cell ant-table-cell-fix-left ant-table-cell-fix-left-last"
+                                                                style="position: sticky; left: 0px;">
+                                                                <div class="text-sm text-center">Type</div>
+                                                            </th>
+                                                            <th class="ant-table-cell">
+                                                                <div class="text-sm text-center cursor-pointer">PNL</div>
+                                                            </th>
+                                                            <th class="ant-table-cell">
+                                                                <div class="text-sm  text-center cursor-pointer">Bal</div>
+                                                            </th>
+                                                            <th class="ant-table-cell">
+                                                                <div class="text-sm  text-center cursor-pointer">Cover</div>
+                                                            </th>
+                                                            <th class="ant-table-cell">
+                                                                <div class="text-sm  text-center cursor-pointer">Amt</div>
+                                                            </th>
+                                                            <th class="ant-table-cell">
+                                                                <div class=" cursor-pointer text-sm  text-center">Exchange Platform</div>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="ant-table-tbody">
+                                                        <tr aria-hidden="true" class="ant-table-measure-row"
+                                                            style="height: 0px; font-size: 0px;">
+                                                            <td style="padding: 0px; border: 0px; height: 0px;">
+                                                                <div style="height: 0px; overflow: hidden;">&nbsp;</div>
+                                                            </td>
+                                                            <td style="padding: 0px; border: 0px; height: 0px;">
+                                                                <div style="height: 0px; overflow: hidden;">&nbsp;</div>
+                                                            </td>
+                                                            <td style="padding: 0px; border: 0px; height: 0px;">
+                                                                <div style="height: 0px; overflow: hidden;">&nbsp;</div>
+                                                            </td>
+                                                            <td style="padding: 0px; border: 0px; height: 0px;">
+                                                                <div style="height: 0px; overflow: hidden;">&nbsp;</div>
+                                                            </td>
+                                                            <td style="padding: 0px; border: 0px; height: 0px;">
+                                                                <div style="height: 0px; overflow: hidden;">&nbsp;</div>
+                                                            </td>
+                                                            <td style="padding: 0px; border: 0px; height: 0px;">
+                                                                <div style="height: 0px; overflow: hidden;">&nbsp;</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="ant-table-row ant-table-row-level-0">
+                                                            <td class="ant-table-cell ant-table-cell-fix-left ant-table-cell-fix-left-last"
+                                                                style="position: sticky; left: 0px;">
+                                                                <div class="flex justify-start px-0.5  ">
+                                                                    <div class="flex grid grid-cols-12">
+                                                                        <div class="flex justify-center items-center col-span-3"
+                                                                            style="width: 25px;"><img
+                                                                                src="https://asiaezsight.com/coins/xrp.png"
+                                                                                class=" mt-0.5 mr-1 pl-0.5" style="width: 25px; height: 25px;">
+                                                                        </div>
+                                                                        <div class="flex text-xs text-center py-1 cursor-pointer col-span-5"
+                                                                            style="width: 160px;">
+                                                                            <div class="">
+                                                                                <div class="flex justify-start">XRP </div>
+                                                                                <div class="flex justify-start" style="font-size: 0.5rem;">
+                                                                                    <span>ID: a332 </span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="pl-1 py-1">
+                                                                            <div class="flex justify-start text-green-500"
+                                                                                style="font-size: 11px;">0.3803</div>
+                                                                            <div class="flex justify-start" style="font-size: 11px;">0.2139
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center text-green-500">42.90</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center ">13</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">119</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">1000</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">Binance</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="ant-table-row ant-table-row-level-0">
+                                                            <td class="ant-table-cell ant-table-cell-fix-left ant-table-cell-fix-left-last"
+                                                                style="position: sticky; left: 0px;">
+                                                                <div class="flex justify-start px-0.5  ">
+                                                                    <div class="flex grid grid-cols-12">
+                                                                        <div class="flex justify-center items-center col-span-3"
+                                                                            style="width: 25px;"><img
+                                                                                src="https://asiaezsight.com/coins/xvg.png"
+                                                                                class=" mt-0.5 mr-1 pl-0.5" style="width: 25px; height: 25px;">
+                                                                        </div>
+                                                                        <div class="flex text-xs text-center py-1 cursor-pointer col-span-5"
+                                                                            style="width: 160px;">
+                                                                            <div class="">
+                                                                                <div class="flex justify-start">XVG </div>
+                                                                                <div class="flex justify-start" style="font-size: 0.5rem;">
+                                                                                    <span>ID: a20d </span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="pl-1 py-1">
+                                                                            <div class="flex justify-start text-green-500"
+                                                                                style="font-size: 11px;">0.0030</div>
+                                                                            <div class="flex justify-start" style="font-size: 11px;">0.0017
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center text-green-500">60.72</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center ">10</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">170</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">1000</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">Binance</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="ant-table-row ant-table-row-level-0">
+                                                            <td class="ant-table-cell ant-table-cell-fix-left ant-table-cell-fix-left-last"
+                                                                style="position: sticky; left: 0px;">
+                                                                <div class="flex justify-start px-0.5  ">
+                                                                    <div class="flex grid grid-cols-12">
+                                                                        <div class="flex justify-center items-center col-span-3"
+                                                                            style="width: 25px;"><img
+                                                                                src="https://asiaezsight.com/coins/rlc.png"
+                                                                                class=" mt-0.5 mr-1 pl-0.5" style="width: 25px; height: 25px;">
+                                                                        </div>
+                                                                        <div class="flex text-xs text-center py-1 cursor-pointer col-span-5"
+                                                                            style="width: 160px;">
+                                                                            <div class="">
+                                                                                <div class="flex justify-start">RLC </div>
+                                                                                <div class="flex justify-start" style="font-size: 0.5rem;">
+                                                                                    <span>ID: a1c8 </span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="pl-1 py-1">
+                                                                            <div class="flex justify-start text-green-500"
+                                                                                style="font-size: 11px;">2.0590</div>
+                                                                            <div class="flex justify-start" style="font-size: 11px;">1.1350
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center text-green-500">141.03</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center ">11</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">351</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">1000</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">Binance</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="ant-table-row ant-table-row-level-0">
+                                                            <td class="ant-table-cell ant-table-cell-fix-left ant-table-cell-fix-left-last"
+                                                                style="position: sticky; left: 0px;">
+                                                                <div class="flex justify-start px-0.5  ">
+                                                                    <div class="flex grid grid-cols-12">
+                                                                        <div class="flex justify-center items-center col-span-3"
+                                                                            style="width: 25px;"><img
+                                                                                src="https://asiaezsight.com/coins/magic.png"
+                                                                                class=" mt-0.5 mr-1 pl-0.5" style="width: 25px; height: 25px;">
+                                                                        </div>
+                                                                        <div class="flex text-xs text-center py-1 cursor-pointer col-span-5"
+                                                                            style="width: 160px;">
+                                                                            <div class="">
+                                                                                <div class="flex justify-start">MAGIC </div>
+                                                                                <div class="flex justify-start" style="font-size: 0.5rem;">
+                                                                                    <span>ID: a1ac </span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="pl-1 py-1">
+                                                                            <div class="flex justify-start text-green-500"
+                                                                                style="font-size: 11px;">1.6329</div>
+                                                                            <div class="flex justify-start" style="font-size: 11px;">1.0032
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center text-green-500">220.46</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center ">21</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">514</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">1000</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">Binance</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="ant-table-row ant-table-row-level-0">
+                                                            <td class="ant-table-cell ant-table-cell-fix-left ant-table-cell-fix-left-last"
+                                                                style="position: sticky; left: 0px;">
+                                                                <div class="flex justify-start px-0.5  ">
+                                                                    <div class="flex grid grid-cols-12">
+                                                                        <div class="flex justify-center items-center col-span-3"
+                                                                            style="width: 25px;"><img
+                                                                                src="https://asiaezsight.com/coins/qnt.png"
+                                                                                class=" mt-0.5 mr-1 pl-0.5" style="width: 25px; height: 25px;">
+                                                                        </div>
+                                                                        <div class="flex text-xs text-center py-1 cursor-pointer col-span-5"
+                                                                            style="width: 160px;">
+                                                                            <div class="">
+                                                                                <div class="flex justify-start">QNT </div>
+                                                                                <div class="flex justify-start" style="font-size: 0.5rem;">
+                                                                                    <span>ID: a190 </span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="pl-1 py-1">
+                                                                            <div class="flex justify-start text-green-500"
+                                                                                style="font-size: 11px;">138.2000</div>
+                                                                            <div class="flex justify-start" style="font-size: 11px;">75.3000
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center text-green-500">46.10</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center ">12</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">119</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">1000</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">Binance</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="ant-table-row ant-table-row-level-0">
+                                                            <td class="ant-table-cell ant-table-cell-fix-left ant-table-cell-fix-left-last"
+                                                                style="position: sticky; left: 0px;">
+                                                                <div class="flex justify-start px-0.5  ">
+                                                                    <div class="flex grid grid-cols-12">
+                                                                        <div class="flex justify-center items-center col-span-3"
+                                                                            style="width: 25px;"><img
+                                                                                src="https://asiaezsight.com/coins/xmr.png"
+                                                                                class=" mt-0.5 mr-1 pl-0.5" style="width: 25px; height: 25px;">
+                                                                        </div>
+                                                                        <div class="flex text-xs text-center py-1 cursor-pointer col-span-5"
+                                                                            style="width: 160px;">
+                                                                            <div class="">
+                                                                                <div class="flex justify-start">XMR </div>
+                                                                                <div class="flex justify-start" style="font-size: 0.5rem;">
+                                                                                    <span>ID: a174 </span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="pl-1 py-1">
+                                                                            <div class="flex justify-start text-green-500"
+                                                                                style="font-size: 11px;">157.7000</div>
+                                                                            <div class="flex justify-start" style="font-size: 11px;">92.1000
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center text-green-500">34.29</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center ">18</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">105</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">1000</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">Binance</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="ant-table-row ant-table-row-level-0">
+                                                            <td class="ant-table-cell ant-table-cell-fix-left ant-table-cell-fix-left-last"
+                                                                style="position: sticky; left: 0px;">
+                                                                <div class="flex justify-start px-0.5  ">
+                                                                    <div class="flex grid grid-cols-12">
+                                                                        <div class="flex justify-center items-center col-span-3"
+                                                                            style="width: 25px;"><img
+                                                                                src="https://asiaezsight.com/coins/link.png"
+                                                                                class=" mt-0.5 mr-1 pl-0.5" style="width: 25px; height: 25px;">
+                                                                        </div>
+                                                                        <div class="flex text-xs text-center py-1 cursor-pointer col-span-5"
+                                                                            style="width: 160px;">
+                                                                            <div class="">
+                                                                                <div class="flex justify-start">LINK </div>
+                                                                                <div class="flex justify-start" style="font-size: 0.5rem;">
+                                                                                    <span>ID: a158 </span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="pl-1 py-1">
+                                                                            <div class="flex justify-start text-green-500"
+                                                                                style="font-size: 11px;">6.7700</div>
+                                                                            <div class="flex justify-start" style="font-size: 11px;">3.7305
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center text-green-500">63.11</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center ">11</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">173</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">1000</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">Binance</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="ant-table-row ant-table-row-level-0">
+                                                            <td class="ant-table-cell ant-table-cell-fix-left ant-table-cell-fix-left-last"
+                                                                style="position: sticky; left: 0px;">
+                                                                <div class="flex justify-start px-0.5  ">
+                                                                    <div class="flex grid grid-cols-12">
+                                                                        <div class="flex justify-center items-center col-span-3"
+                                                                            style="width: 25px;"><img
+                                                                                src="https://asiaezsight.com/coins/xvs.png"
+                                                                                class=" mt-0.5 mr-1 pl-0.5" style="width: 25px; height: 25px;">
+                                                                        </div>
+                                                                        <div class="flex text-xs text-center py-1 cursor-pointer col-span-5"
+                                                                            style="width: 160px;">
+                                                                            <div class="">
+                                                                                <div class="flex justify-start">XVS </div>
+                                                                                <div class="flex justify-start" style="font-size: 0.5rem;">
+                                                                                    <span>ID: a13c </span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="pl-1 py-1">
+                                                                            <div class="flex justify-start text-green-500"
+                                                                                style="font-size: 11px;">5.9100</div>
+                                                                            <div class="flex justify-start" style="font-size: 11px;">3.1150
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center text-green-500">58.83</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center ">7</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">135</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">1000</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">Binance</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="ant-table-row ant-table-row-level-0">
+                                                            <td class="ant-table-cell ant-table-cell-fix-left ant-table-cell-fix-left-last"
+                                                                style="position: sticky; left: 0px;">
+                                                                <div class="flex justify-start px-0.5  ">
+                                                                    <div class="flex grid grid-cols-12">
+                                                                        <div class="flex justify-center items-center col-span-3"
+                                                                            style="width: 25px;"><img
+                                                                                src="https://asiaezsight.com/coins/sol.png"
+                                                                                class=" mt-0.5 mr-1 pl-0.5" style="width: 25px; height: 25px;">
+                                                                        </div>
+                                                                        <div class="flex text-xs text-center py-1 cursor-pointer col-span-5"
+                                                                            style="width: 160px;">
+                                                                            <div class="">
+                                                                                <div class="flex justify-start">SOL </div>
+                                                                                <div class="flex justify-start" style="font-size: 0.5rem;">
+                                                                                    <span>ID: a0fd </span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="pl-1 py-1">
+                                                                            <div class="flex justify-start text-green-500"
+                                                                                style="font-size: 11px;">21.5700</div>
+                                                                            <div class="flex justify-start" style="font-size: 11px;">12.9700
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center text-green-500">86.02</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center ">20</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">173</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">1000</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">Binance</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="ant-table-row ant-table-row-level-0">
+                                                            <td class="ant-table-cell ant-table-cell-fix-left ant-table-cell-fix-left-last"
+                                                                style="position: sticky; left: 0px;">
+                                                                <div class="flex justify-start px-0.5  ">
+                                                                    <div class="flex grid grid-cols-12">
+                                                                        <div class="flex justify-center items-center col-span-3"
+                                                                            style="width: 25px;"><img
+                                                                                src="https://asiaezsight.com/coins/elf.png"
+                                                                                class=" mt-0.5 mr-1 pl-0.5" style="width: 25px; height: 25px;">
+                                                                        </div>
+                                                                        <div class="flex text-xs text-center py-1 cursor-pointer col-span-5"
+                                                                            style="width: 160px;">
+                                                                            <div class="">
+                                                                                <div class="flex justify-start">ELF </div>
+                                                                                <div class="flex justify-start" style="font-size: 0.5rem;">
+                                                                                    <span>ID: a0b8 </span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="pl-1 py-1">
+                                                                            <div class="flex justify-start text-green-500"
+                                                                                style="font-size: 11px;">0.2265</div>
+                                                                            <div class="flex justify-start" style="font-size: 11px;">0.1186
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center text-green-500">58.04</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center ">5</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">117</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">1000</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">Binance</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="ant-table-row ant-table-row-level-0">
+                                                            <td class="ant-table-cell ant-table-cell-fix-left ant-table-cell-fix-left-last"
+                                                                style="position: sticky; left: 0px;">
+                                                                <div class="flex justify-start px-0.5  ">
+                                                                    <div class="flex grid grid-cols-12">
+                                                                        <div class="flex justify-center items-center col-span-3"
+                                                                            style="width: 25px;"><img
+                                                                                src="https://asiaezsight.com/coins/ardr.png"
+                                                                                class=" mt-0.5 mr-1 pl-0.5" style="width: 25px; height: 25px;">
+                                                                        </div>
+                                                                        <div class="flex text-xs text-center py-1 cursor-pointer col-span-5"
+                                                                            style="width: 160px;">
+                                                                            <div class="">
+                                                                                <div class="flex justify-start">ARDR </div>
+                                                                                <div class="flex justify-start" style="font-size: 0.5rem;">
+                                                                                    <span>ID: a09a </span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="pl-1 py-1">
+                                                                            <div class="flex justify-start text-green-500"
+                                                                                style="font-size: 11px;">0.0929</div>
+                                                                            <div class="flex justify-start" style="font-size: 11px;">0.0532
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center text-green-500">107.90</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center ">11</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">253</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">1000</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">Binance</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="ant-table-row ant-table-row-level-0">
+                                                            <td class="ant-table-cell ant-table-cell-fix-left ant-table-cell-fix-left-last"
+                                                                style="position: sticky; left: 0px;">
+                                                                <div class="flex justify-start px-0.5  ">
+                                                                    <div class="flex grid grid-cols-12">
+                                                                        <div class="flex justify-center items-center col-span-3"
+                                                                            style="width: 25px;"><img
+                                                                                src="https://asiaezsight.com/coins/rad.png"
+                                                                                class=" mt-0.5 mr-1 pl-0.5" style="width: 25px; height: 25px;">
+                                                                        </div>
+                                                                        <div class="flex text-xs text-center py-1 cursor-pointer col-span-5"
+                                                                            style="width: 160px;">
+                                                                            <div class="">
+                                                                                <div class="flex justify-start">RAD </div>
+                                                                                <div class="flex justify-start" style="font-size: 0.5rem;">
+                                                                                    <span>ID: a071 </span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="pl-1 py-1">
+                                                                            <div class="flex justify-start text-green-500"
+                                                                                style="font-size: 11px;">1.8730</div>
+                                                                            <div class="flex justify-start" style="font-size: 11px;">1.0850
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center text-green-500">130.55</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center ">16</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">332</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">1000</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">Binance</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="ant-table-row ant-table-row-level-0">
+                                                            <td class="ant-table-cell ant-table-cell-fix-left ant-table-cell-fix-left-last"
+                                                                style="position: sticky; left: 0px;">
+                                                                <div class="flex justify-start px-0.5  ">
+                                                                    <div class="flex grid grid-cols-12">
+                                                                        <div class="flex justify-center items-center col-span-3"
+                                                                            style="width: 25px;"><img
+                                                                                src="https://asiaezsight.com/coins/paxg.png"
+                                                                                class=" mt-0.5 mr-1 pl-0.5" style="width: 25px; height: 25px;">
+                                                                        </div>
+                                                                        <div class="flex text-xs text-center py-1 cursor-pointer col-span-5"
+                                                                            style="width: 160px;">
+                                                                            <div class="">
+                                                                                <div class="flex justify-start">PAXG </div>
+                                                                                <div class="flex justify-start" style="font-size: 0.5rem;">
+                                                                                    <span>ID: a04a </span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="pl-1 py-1">
+                                                                            <div class="flex justify-start text-green-500"
+                                                                                style="font-size: 11px;">1,832.0000</div>
+                                                                            <div class="flex justify-start" style="font-size: 11px;">954.5000
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center text-green-500">2.79</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center ">6</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">14</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">1000</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">Binance</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="ant-table-row ant-table-row-level-0">
+                                                            <td class="ant-table-cell ant-table-cell-fix-left ant-table-cell-fix-left-last"
+                                                                style="position: sticky; left: 0px;">
+                                                                <div class="flex justify-start px-0.5  ">
+                                                                    <div class="flex grid grid-cols-12">
+                                                                        <div class="flex justify-center items-center col-span-3"
+                                                                            style="width: 25px;"><img
+                                                                                src="https://asiaezsight.com/coins/bnb.png"
+                                                                                class=" mt-0.5 mr-1 pl-0.5" style="width: 25px; height: 25px;">
+                                                                        </div>
+                                                                        <div class="flex text-xs text-center py-1 cursor-pointer col-span-5"
+                                                                            style="width: 160px;">
+                                                                            <div class="">
+                                                                                <div class="flex justify-start">BNB </div>
+                                                                                <div class="flex justify-start" style="font-size: 0.5rem;">
+                                                                                    <span>ID: 9fe1 </span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="pl-1 py-1">
+                                                                            <div class="flex justify-start text-green-500"
+                                                                                style="font-size: 11px;">296.4000</div>
+                                                                            <div class="flex justify-start" style="font-size: 11px;">165.8500
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center text-green-500">25.16</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center ">13</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">81</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">1000</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">Binance</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="ant-table-row ant-table-row-level-0">
+                                                            <td class="ant-table-cell ant-table-cell-fix-left ant-table-cell-fix-left-last"
+                                                                style="position: sticky; left: 0px;">
+                                                                <div class="flex justify-start px-0.5  ">
+                                                                    <div class="flex grid grid-cols-12">
+                                                                        <div class="flex justify-center items-center col-span-3"
+                                                                            style="width: 25px;"><img
+                                                                                src="https://asiaezsight.com/coins/vidt.png"
+                                                                                class=" mt-0.5 mr-1 pl-0.5" style="width: 25px; height: 25px;">
+                                                                        </div>
+                                                                        <div class="flex text-xs text-center py-1 cursor-pointer col-span-5"
+                                                                            style="width: 160px;">
+                                                                            <div class="">
+                                                                                <div class="flex justify-start">VIDT </div>
+                                                                                <div class="flex justify-start" style="font-size: 0.5rem;">
+                                                                                    <span>ID: 9df9 </span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="pl-1 py-1">
+                                                                            <div class="flex justify-start text-green-500"
+                                                                                style="font-size: 11px;">0.0440</div>
+                                                                            <div class="flex justify-start" style="font-size: 11px;">0.0291
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center text-green-500">687.46</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center ">26</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">340</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">5000</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">Binance</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="ant-table-row ant-table-row-level-0">
+                                                            <td class="ant-table-cell ant-table-cell-fix-left ant-table-cell-fix-left-last"
+                                                                style="position: sticky; left: 0px;">
+                                                                <div class="flex justify-start px-0.5  ">
+                                                                    <div class="flex grid grid-cols-12">
+                                                                        <div class="flex justify-center items-center col-span-3"
+                                                                            style="width: 25px;"><img
+                                                                                src="https://asiaezsight.com/coins/vidt.png"
+                                                                                class=" mt-0.5 mr-1 pl-0.5" style="width: 25px; height: 25px;">
+                                                                        </div>
+                                                                        <div class="flex text-xs text-center py-1 cursor-pointer col-span-5"
+                                                                            style="width: 160px;">
+                                                                            <div class="">
+                                                                                <div class="flex justify-start">VIDT </div>
+                                                                                <div class="flex justify-start" style="font-size: 0.5rem;">
+                                                                                    <span>ID: 9dcc </span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="pl-1 py-1">
+                                                                            <div class="flex justify-start text-green-500"
+                                                                                style="font-size: 11px;">0.0440</div>
+                                                                            <div class="flex justify-start" style="font-size: 11px;">0.0291
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center text-green-500">659.86</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center ">26</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">332</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">5000</div>
+                                                            </td>
+                                                            <td class="ant-table-cell">
+                                                                <div class="text-sm text-center">Binance</div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="ant-pagination ant-pagination-simple mini ant-table-pagination ant-table-pagination-right">
+                                        <li title="Previous Page" class="ant-pagination-prev ant-pagination-disabled" aria-disabled="true">
+                                            <button class="ant-pagination-item-link" type="button" tabindex="-1" disabled=""><span role="img"
+                                                    aria-label="left" class="anticon anticon-left"><svg viewBox="64 64 896 896"
+                                                        focusable="false" data-icon="left" width="1em" height="1em" fill="currentColor"
+                                                        aria-hidden="true">
+                                                        <path
+                                                            d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 000 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z">
+                                                        </path>
+                                                    </svg></span></button></li>
+                                        <li title="1/1" class="ant-pagination-simple-pager"><input type="text" size="3" value="1"><span
+                                                class="ant-pagination-slash">/</span>1</li>
+                                        <li title="Next Page" class="ant-pagination-next ant-pagination-disabled" aria-disabled="true"><button
+                                                class="ant-pagination-item-link" type="button" tabindex="-1" disabled=""><span role="img"
+                                                    aria-label="right" class="anticon anticon-right"><svg viewBox="64 64 896 896"
+                                                        focusable="false" data-icon="right" width="1em" height="1em" fill="currentColor"
+                                                        aria-hidden="true">
+                                                        <path
+                                                            d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z">
+                                                        </path>
+                                                    </svg></span></button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+                    </div>
+                        
+
+                   
+                
+            </div>
+           
+            
+
+            
+        </div>
+
+
+        <!-- Sticky Animated Tab Bar -->
+        <div class="z-20 sticky bottom-0 right-0 left-0 p-0 bg-white">
+            <nav class="navbar-container">
+                <ul class="list grid grid-cols-10 justify-center">
+                <div style="--position: 2;" data-indicator class="indicator">
+                    <div class="corners"></div>
+                </div>
+                <li class="col-span-2 flex justify-center"><a href="#">
+                    <div class="icon">
+                        <img src="./images/home.svg">
+                    </div>
+                    <div class="text">Home</div>
+                </a></li>
+                <li class="col-span-2 flex justify-center"><a href="#">
+                    <div class="icon">
+                        <img src="./images/dashboard.svg">
+                    </div>
+                    <div class="text">Dashboard</div>
+                </a></li>
+                <li class="col-span-2 flex justify-center"><a href="#" class="active">
+                    <div class="icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.4211 13.4167C16.9684 13.4167 17.4211 13.2356 17.7789 12.8736C18.1368 12.5116 18.3158 12.0537 18.3158 11.5C18.3158 10.9463 18.1368 10.4884 17.7789 10.1264C17.4211 9.76435 16.9684 9.58333 16.4211 9.58333C15.8737 9.58333 15.4211 9.76435 15.0632 10.1264C14.7053 10.4884 14.5263 10.9463 14.5263 11.5C14.5263 12.0537 14.7053 12.5116 15.0632 12.8736C15.4211 13.2356 15.8737 13.4167 16.4211 13.4167ZM2.52632 23C1.83158 23 1.23663 22.75 0.741474 22.2499C0.247158 21.7491 0 21.1472 0 20.4444V2.55556C0 1.85278 0.247158 1.25094 0.741474 0.750055C1.23663 0.250018 1.83158 0 2.52632 0H20.2105C20.9053 0 21.5002 0.250018 21.9954 0.750055C22.4897 1.25094 22.7368 1.85278 22.7368 2.55556V5.75H20.2105V2.55556H2.52632V20.4444H20.2105V17.25H22.7368V20.4444C22.7368 21.1472 22.4897 21.7491 21.9954 22.2499C21.5002 22.75 20.9053 23 20.2105 23H2.52632ZM12.6316 17.8889C11.9368 17.8889 11.3423 17.6389 10.848 17.1388C10.3528 16.6379 10.1053 16.0361 10.1053 15.3333V7.66667C10.1053 6.96389 10.3528 6.36206 10.848 5.86117C11.3423 5.36113 11.9368 5.11111 12.6316 5.11111H21.4737C22.1684 5.11111 22.7634 5.36113 23.2585 5.86117C23.7528 6.36206 24 6.96389 24 7.66667V15.3333C24 16.0361 23.7528 16.6379 23.2585 17.1388C22.7634 17.6389 22.1684 17.8889 21.4737 17.8889H12.6316Z" fill="white"/>
+                    </svg>                                
+                    </div>
+                    <!-- <div class="text">Messages</div> -->
+                </a></li>
+                <li class="col-span-2 flex justify-center"><a href="#">
+                    <div class="icon">
+                        <img src="./images/list.svg">
+                    </div>
+                    <div class="text">Trade</div>
+                </a></li>
+                <li class="col-span-2 flex justify-center"><a href="#">
+                    <div class="icon">
+                        <img src="./images/profile.svg">
+                    </div>
+                    <div class="text">Profile</div>
+                </a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    </div>
+    <script src="js/script.js"></script>  
+  </body>
+</html>
