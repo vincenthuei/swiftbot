@@ -34,6 +34,16 @@
 }
 
 
+.light-bg{
+  background-color:#EAEAEA;
+}
+
+.white-bg{
+  background-color: #fff;
+  margin-top:-30px;
+  box-shadow: 1px 6px 5px rgba(0, 0, 0, 0.15);
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
@@ -41,8 +51,13 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+.logo{
+  top:30px;
+  left:50%;
+  transform: translateX(-50%);
+}
+
 .banner div{
-    border-radius: 13px;
     overflow: hidden;
 }
 .banner img{
