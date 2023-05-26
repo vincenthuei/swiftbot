@@ -87,19 +87,37 @@
                     <label for="selectEx" class="col-span-1 text-sm font-medium flex items-center">
                         Choose your exchange:
                     </label>
-                    <select id="selectEx"
-                        class="vodiapicker col-span-1 block w-full px-2 py-2 text-gray-700  border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-green-500"
-                        id="selectEx" name="selectField">
-                        <option value="Binance" class="test" data-thumbnail="./images/exchange/binance.svg">
-                        </option>
-                        <option value="Tokocrypto" data-thumbnail="./images/exchange/Tokocrypto.svg">
-                        </option>
-                    </select>
-                
-                    <div class="lang-select">
-                        <button class="btn-select" value=""></button>
-                        <div class="b">
-                            <ul id="a"></ul>
+                    <div x-data="{ open: false, selected: { value: 'binance', label: 'Binance', image: './images/exchange/binance.svg' } }"
+                        class="relative inline-block text-left ml-auto">
+                        <div>
+                            <button type="button" @click="open = !open"
+                                class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-1 focus:ring-green-500">
+                                <img x-bind:src="selected.image" class="w-6 h-6 mr-2 rounded-full" alt="Selected Option">
+                                <svg x-bind:class="{ 'transform rotate-180': open }" class="-mr-1 ml-2 h-5 w-5"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M10 12a1 1 0 01-.707-.293l-3-3a1 1 0 111.414-1.414L10 9.586l2.293-2.293a1 1 0 111.414 1.414l-3 3A1 1 0 0110 12z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div x-show="open" @click.away="open = false"
+                            class="origin-top-right absolute right-0 mt-2 w-24 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none"
+                            role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                            <div class="py-1" role="none">
+                                <a href="#"
+                                    x-on:click="selected = { value: 'binance', label: 'Binance', image: './images/exchange/binance.svg' }"
+                                    class="block px-4 py-2 flex items-center text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                                    role="menuitem">
+                                    <img src="./images/exchange/binance.svg" class="w-6 h-6 mr-2 rounded-full" alt="Binance">
+                                </a>
+                                <a href="#"
+                                    x-on:click="selected = { value: 'tokocrypto', label: 'Tokocrypto', image: './images/exchange/tokocrypto.svg' }"
+                                    class="block px-4 py-2 flex items-center text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                                    role="menuitem">
+                                    <img src="./images/exchange/tokocrypto.svg" class="w-6 h-6 mr-2 rounded-full" alt="Tokocrypto">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1000,58 +1018,12 @@
     </div>
     </div>
     <script src="js/script.js"></script>
-    <script>
-        var langArray = [];
-        var vodiapickerOptions = document.querySelectorAll('.vodiapicker option');
 
-        vodiapickerOptions.forEach(function (option) {
-            var img = option.getAttribute("data-thumbnail");
-            var text = option.innerText;
-            var value = option.value;
-            var item = '<li><img src="' + img + '" alt="" value="' + value + '"/></li>';
-            langArray.push(item);
-        });
+    <!-- AlpineJS -->
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+        integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
 
-        var aElement = document.getElementById('a');
-        aElement.innerHTML = langArray.join('');
-
-        var btnSelectElement = document.querySelector('.btn-select');
-        btnSelectElement.innerHTML = langArray[0];
-        btnSelectElement.setAttribute('value', 'Binance');
-
-        var aLiElements = document.querySelectorAll('#a li');
-        aLiElements.forEach(function (li) {
-            li.addEventListener('click', function () {
-                var img = li.querySelector('img').getAttribute("src");
-                var value = li.querySelector('img').getAttribute('value');
-
-                var item = '<li><img src="' + img + '" alt="" /></li>';
-                btnSelectElement.innerHTML = item;
-                btnSelectElement.setAttribute('value', value);
-                document.querySelector(".b").style.display = "none";
-            });
-        });
-
-        btnSelectElement.addEventListener('click', function () {
-            document.querySelector(".b").style.display = "block";
-        });
-
-        var sessionLang = localStorage.getItem('lang');
-        if (sessionLang) {
-            var langIndex = langArray.findIndex(function (item) {
-                return item.includes(sessionLang);
-            });
-            btnSelectElement.innerHTML = langArray[langIndex];
-            btnSelectElement.setAttribute('value', sessionLang);
-        } else {
-            var langIndex = langArray.findIndex(function (item) {
-                return item.includes('ch');
-            });
-            console.log(langIndex);
-            btnSelectElement.innerHTML = langArray[langIndex];
-            // btnSelectElement.setAttribute('value', 'en');
-        }
-
-    </script>
   </body>
 </html>

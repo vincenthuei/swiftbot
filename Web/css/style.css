@@ -203,9 +203,16 @@ nav a.active-nav-link{
   background: #F9F9F9;
 }
 
-.navItem-bg-color:hover {
-    background:#013648;
+.desired-coin{
+  background-color: #fff;
+  color:#36D7A7;
 }
+.desired-coin:hover,
+.desired-coin.active {
+  background: linear-gradient(180deg, #43C1A9 0%, #24917C 100%);
+  color: #fff;
+}
+
 .mt-130{
     margin-top: 8.125rem;
 }
@@ -528,7 +535,7 @@ nav a.active-nav-link{
 
   .bg-green{
     background: rgba(47, 210, 189, 0.7);
-    box-shadow: 20px 4px 8px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
     border-radius: 12px;
   }
 
@@ -577,7 +584,7 @@ nav a.active-nav-link{
   }
 
   .drop-shadow{
-    box-shadow: 20px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
   }
 
   .text-gray{
@@ -632,6 +639,11 @@ nav a.active-nav-link{
 
   .mw-100{
     max-width: 100px;
+    width: 100%;
+  }
+
+  .mw-200 {
+    max-width: 200px;
     width: 100%;
   }
 
@@ -1959,8 +1971,20 @@ nav a.active-nav-link{
   color: #3c4761;
 }
 
+/* Additional CSS for showing selected style */
+.ant-col input[type="radio"]:checked+label>div {
+  background-color: #000;
+  /* Customize the color as desired */
+}
 
+.ant-col input[type="radio"]+label>div {
+  border: 2px solid #fff;
+  outline: #ccc solid 2px;
+}
 
+.border-white{
+  border-color:#fff;
+}
 
 /* End of PCS */
 
